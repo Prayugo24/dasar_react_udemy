@@ -1,15 +1,11 @@
 import React from "react"
 import  ReactDOM  from "react-dom"
-
-const App = () => {
-    return (
-        <div>
-            <h1>Hello Word 2</h1>
-        </div>
-    )
-}
+import App from "./components/App"
 
 ReactDOM.render(
-    <App/>,
+    // untuk memberikan warning pada react jika ada code / fitur yang sudah tidak di support lagi React stricmode
+    <React.StrictMode> 
+        <App/>
+    </React.StrictMode>,
     document.getElementById("root")
 )
