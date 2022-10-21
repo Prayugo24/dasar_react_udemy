@@ -5,7 +5,11 @@ class List extends React.Component{
     render (){
         return(
             <div>
-                <h2>Component List</h2>     
+                {/* cara pemanggilan props */}
+                <h1> { this.props.children }</h1>
+                <h3>  {this.props.name} </h3>
+                <h4> {this.props.myBook }</h4>
+                <h3>  {this.props.test} </h3>
                   {/* child component */}
                 <ListItem/>
             </div>

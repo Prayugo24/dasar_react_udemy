@@ -1,6 +1,6 @@
 import React from "react";
 // import Header from "./Header";
-// import List from "./List";
+import List from "./List";
 
 
 // jsx adalah javascript xml, extensi javascript yang memungkinkan untuk menulis html falam javascript
@@ -24,21 +24,23 @@ class App extends React.Component{
             // root component
             <div>
                 {/* parent component */}
-                    {/* <Header/>
-                    <List/> */}
+                    {/* <Header/> */}
+                    {/* ini cara mngrirm props */}
+                    <List name="kodeakademia" test="test" myBook={ this.state.name }> 
+                    <h4>This is My list</h4>
+                    <p>xample</p>
+                     </List>
                 {/* parent component */}
 
-
-                <h1>Hello Word</h1> 
                 {/* ini state */}
-                <h3>Judul : { this.state.name }</h3>
+                {/* <h3>Judul : { this.state.name }</h3>
                 <p>author : { this.state.author }</p>
                 <p>Price : { this.state.book.price }</p>
                 { this.state.detail.map (item => 
                     <div>
                         <h3> {item} </h3>
                     </div>
-                ) }
+                ) } */}
                 {/* ini state */}
             </div>
             // root component
@@ -61,3 +63,4 @@ class App extends React.Component{
 export default App;
 
 // state data yang bakal kita tampilin dalam component
+// props adalah properti, yang digunakan untuk pengirim data/properti ke parent atau child
