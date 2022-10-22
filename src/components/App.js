@@ -1,6 +1,7 @@
 import React from "react";
 // import Header from "./Header";
-import List from "./List";
+// import List from "./List";
+import Button from "./Button";
 
 
 // jsx adalah javascript xml, extensi javascript yang memungkinkan untuk menulis html falam javascript
@@ -18,18 +19,19 @@ class App extends React.Component{
         author: "Bil wilshon",
     }
 
-
     render(){
         return(
             // root component
             <div>
+                <Button color="biru"/>
+                
 
 
                 {/* parent component */}
                     {/* <Header/> */}
                     {/* ini cara mngrirm props */}
-                    <List nameBooks={ this.state.name } authors={ this.state.author }> 
-                    </List>
+                    {/* <List nameBooks={ this.state.name } authors={ this.state.author }> 
+                    </List> */}
                 {/* parent component */}
 
                 {/* ini state */}
@@ -67,5 +69,8 @@ export default App;
 
 // container component untuk menampung data
 // presentation component untuk tampilan 
+
+// prop types digunakan untuk mengecek props yang masuk kedalam sebuah component
+// 
 
 // di apps ini namanya state full component karena terdapat data full state componentnya
