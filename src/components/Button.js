@@ -2,10 +2,14 @@ import React from "react";
 import PropTypes from "prop-types"
 
 class Button extends React.Component{
+    // cara penggunaan event pada button
+    change = () =>{
+        console.log("Ok")
+    }
     render(){
         return(
             <div>
-                <button>Click My App</button>
+                <button onClick={this.change}>Click My App</button>
             </div>
         )
     }
