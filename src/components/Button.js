@@ -3,19 +3,36 @@ import PropTypes from "prop-types"
 
 class Button extends React.Component{
     state = {
-        name:"kodeakademia"
+        name:"kodeakademia",
+        text:""
     }
     // cara penggunaan event pada button, dan penggunaan set state
-    change = () =>{
+    // change = () =>{
+    //     this.setState({
+    //         name:"Herry poter"
+    //     })
+    // }
+
+    // cara pengguanaan form handle
+    click = () => {
+         this.setState({
+            name: this.state.text,
+        })
         this.setState({
-            name:"Herry poter"
+            text:""
+        })
+    }
+    change = e => {
+        this.setState({
+            text: e.target.value
         })
     }
     render(){
         return(
             <div>
                 <h1>{this.state.name}</h1>
-                <button onClick={this.change}>Click My App</button>
+                <input type="text" value={this.state.text} onChange={this.change}/>
+                <button onClick={this.click}>Click My App</button>
             </div>
         )
     }
