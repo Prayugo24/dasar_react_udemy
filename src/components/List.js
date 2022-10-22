@@ -6,10 +6,8 @@ class List extends React.Component{
         return(
             <div>
                 {/* cara pemanggilan props */}
-                <h1> { this.props.children }</h1>
-                <h3>  {this.props.name} </h3>
-                <h4> {this.props.myBook }</h4>
-                <h3>  {this.props.test} </h3>
+                <h3> {this.props.nameBooks}</h3>
+                <p> {this.props.authors} </p>
                   {/* child component */}
                 <ListItem/>
             </div>
@@ -18,3 +16,5 @@ class List extends React.Component{
 }
 
 export default List
+
+// disini namanya less state component karenan hanya berisi pemnagggilan stae props

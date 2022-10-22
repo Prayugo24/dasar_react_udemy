@@ -23,13 +23,13 @@ class App extends React.Component{
         return(
             // root component
             <div>
+
+
                 {/* parent component */}
                     {/* <Header/> */}
                     {/* ini cara mngrirm props */}
-                    <List name="kodeakademia" test="test" myBook={ this.state.name }> 
-                    <h4>This is My list</h4>
-                    <p>xample</p>
-                     </List>
+                    <List nameBooks={ this.state.name } authors={ this.state.author }> 
+                    </List>
                 {/* parent component */}
 
                 {/* ini state */}
@@ -42,7 +42,7 @@ class App extends React.Component{
                     </div>
                 ) } */}
                 {/* ini state */}
-            </div>
+            </div> 
             // root component
 
 
@@ -64,3 +64,8 @@ export default App;
 
 // state data yang bakal kita tampilin dalam component
 // props adalah properti, yang digunakan untuk pengirim data/properti ke parent atau child
+
+// container component untuk menampung data
+// presentation component untuk tampilan 
+
+// di apps ini namanya state full component karena terdapat data full state componentnya
