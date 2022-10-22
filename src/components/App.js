@@ -24,8 +24,6 @@ class App extends React.Component{
             // root component
             <div>
                 <Button color="biru"/>
-                
-
 
                 {/* parent component */}
                     {/* <Header/> */}
@@ -74,3 +72,5 @@ export default App;
 // 
 
 // di apps ini namanya state full component karena terdapat data full state componentnya
+
+// sebelum di react 16 untuk membuat state di reatct itu hanya bisa dilakukan di class saja, sedangkan di function tidak bisa
